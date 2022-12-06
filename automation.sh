@@ -18,7 +18,7 @@ if [ "${ApacheServiceStatus}" != "active" ]; then
         sudo systemctl start apache2.service
 fi
 myname="nikita"
-s3_bucket="s3fullniki"
+s3_bucket="upgrad-nikitabhavsar"
 timestamp=$(date '+%d%m%Y-%H%M%S')
 cd /var/log/apache2/
 filename=$myname"-httpd-logs-"$timestamp
