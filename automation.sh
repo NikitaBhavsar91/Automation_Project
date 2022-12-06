@@ -38,4 +38,3 @@ if  [ ! -f  /etc/cron.d/automation ]
 then
         echo  "0 18 * * * \troot\t/root/Automation_Project/automation.sh" > /etc/cron.d/automation
 fi
-                                                             41,2          Bo
