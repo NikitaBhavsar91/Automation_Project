@@ -18,7 +18,7 @@ if [ "${ApacheServiceStatus}" != "active" ]; then
         sudo systemctl start apache2.service
 fi
 myname="nikita"
-s3_bucket="s3fullniki"
+s3_bucket="upgrad-nikitabhavsar"
 timestamp=$(date '+%d%m%Y-%H%M%S')
 cd /var/log/apache2/
 filename=$myname"-httpd-logs-"$timestamp
@@ -38,4 +38,3 @@ if  [ ! -f  /etc/cron.d/automation ]
 then
         echo  "0 18 * * * \troot\t/root/Automation_Project/automation.sh" > /etc/cron.d/automation
 fi
-                                                             41,2          Bo
